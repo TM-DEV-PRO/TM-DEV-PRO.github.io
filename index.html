@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarun Mittal — Senior Software Engineer</title>
+  <meta name="description" content="Tarun Mittal, Senior Software Engineer. Python & Go microservices, event-driven systems, agentic AI. Building the agentic rebuild of AssortSmart at Impact Analytics. Previously Uber, Masters India, GeeksforGeeks." />
+  <meta property="og:title" content="Tarun Mittal — Senior Software Engineer" />
+  <meta property="og:description" content="Python & Go microservices, distributed systems, agentic AI. Football on weekends, CS:GO at night." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <a href="#top" class="nav-logo mono">tm<span class="accent">.</span>dev</a>
+    <div class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#beyond">Beyond Code</a>
+      <a href="assets/Tarun_Mittal_Resume.pdf" download="Tarun_Mittal_Resume.pdf" class="btn btn-small">Resume ↓</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero-text reveal">
+      <p class="mono kicker">Hi, I'm</p>
+      <h1>Tarun Mittal<span class="accent">.</span></h1>
+      <h2 class="hero-sub">I build backends that <span class="gradient-text" id="typed">scale</span><span class="cursor">|</span></h2>
+      <p class="hero-blurb">
+        Senior Software Engineer with <strong>5 years</strong> of shipping cloud-native, high-throughput
+        distributed systems in <strong>Python</strong> and <strong>Go</strong>. Currently building the
+        <strong>agentic rebuild of AssortSmart</strong> at Impact Analytics — AI agents that help retailers
+        plan what to buy, how much, and for which stores. Previously moved money-scale data at
+        <strong>Uber</strong>, GST invoices at <strong>Masters India</strong>, and a whole lot of
+        code at <strong>GeeksforGeeks</strong>.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="assets/Tarun_Mittal_Resume.pdf" download="Tarun_Mittal_Resume.pdf">Download Resume</a>
+        <a class="btn" href="https://github.com/TM-DEV-PRO" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/t-mittal/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="mailto:tm.eng2021@gmail.com">Email Me</a>
+      </div>
+      <p class="mono hero-loc">📍 Bangalore, India · open to interesting problems</p>
+    </div>
+    <div class="hero-photo reveal">
+      <div class="photo-ring">
+        <img src="assets/profile.jpg" alt="Tarun Mittal" onerror="this.onerror=null;this.src='assets/avatar.svg'" />
+      </div>
+      <div class="photo-badge mono">⚽ + ⌨️ + 🎮</div>
+    </div>
+  </header>
+
+  <!-- ============ STATS STRIP ============ -->
+  <section class="stats reveal">
+    <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span><p>years of engineering</p></div>
+    <div class="stat"><span class="stat-num" data-count="4">0</span><p>companies, zero boring days</p></div>
+    <div class="stat"><span class="stat-num" data-count="600">0</span><span class="stat-plus">K+</span><p>$ saved per year at Uber Eats</p></div>
+    <div class="stat"><span class="stat-num" data-count="1">0</span><span class="stat-plus">M+</span><p>daily transactions scaled</p></div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section">
+    <h3 class="section-title"><span class="mono accent">01.</span> Where I've Worked</h3>
+
+    <div class="timeline">
+
+      <article class="tl-card reveal">
+        <div class="tl-meta">
+          <span class="tl-badge current">Now</span>
+          <span class="mono tl-date">Jun 2026 — Present</span>
+        </div>
+        <h4>Senior Software Engineer · <span class="accent">Impact Analytics</span></h4>
+        <p class="tl-project">Agentic AssortSmart — AI-powered retail merchandise planning</p>
+        <ul>
+          <li>Building the agentic rebuild of AssortSmart, a merchandise planning SaaS where AI agents draft store clusters and plans for planner review, override, and approval.</li>
+          <li>Developing the <strong>Python agentic microservice (FastAPI, LangGraph, MCP)</strong> — the store clustering agent picks features by significance, tunes cluster count via silhouette scoring, and serves 3–5 ranked scenarios, cutting turnaround from days to <strong>under an hour</strong>.</li>
+          <li>Building the core backend as <strong>Go (Gin) microservices</strong> — plan lifecycle, tenant config, bulk saves, JWT middleware, goroutine worker pools.</li>
+          <li>Led adoption of <strong>ClickHouse</strong> with an append-only versioned write model: every planner override is an insert, powering version diff, undo/redo, and an immutable audit trail.</li>
+          <li>Designing the <strong>planning grid backend</strong> — an Excel-like pivot surface serving rollups at <strong>p95 &lt; 500ms</strong> and cell edits under <strong>80ms</strong>.</li>
+        </ul>
+        <div class="chips">
+          <span>Python</span><span>FastAPI</span><span>LangGraph</span><span>MCP</span><span>Go</span><span>Gin</span><span>ClickHouse</span><span>PostgreSQL</span><span>Kafka</span><span>GCP</span>
+        </div>
+      </article>
+
+      <article class="tl-card reveal">
+        <div class="tl-meta">
+          <span class="tl-badge">Uber</span>
+          <span class="mono tl-date">Jul 2024 — May 2026</span>
+        </div>
+        <h4>Software Engineer · <span class="accent">Uber</span> <span class="tl-via">(via EPAM Systems)</span></h4>
+        <p class="tl-project">FRM Scoping Platform (Uber Finance) · Menu Ingestion &amp; Automation (Uber Eats)</p>
+        <ul>
+          <li>Cut Uber's quarterly financial risk-scoping cycle by <strong>70%</strong> — replaced a manual Sheets workflow with a FastAPI + MySQL platform (36 REST endpoints, 8 screens) feeding PwC audit work papers.</li>
+          <li>Designed an 8-table normalized schema whose quarterly ETL crunches <strong>19M+ general-ledger rows into 300K</strong>, reconciled against public 10-Q filings.</li>
+          <li>Built an event-driven ingestion pipeline on <strong>Kafka, Flink, and Spark</strong> processing <strong>30,000+ vendor menus/month</strong> — onboarding went from 24h to 2h, saving <strong>$600K+ a year</strong>.</li>
+          <li>Shipped an AI extraction pipeline (<strong>RAG + Gemini 2.5 Pro</strong>) turning PDF and image menus into schema-validated catalog data at <strong>98% fidelity</strong>.</li>
+        </ul>
+        <div class="chips">
+          <span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>MySQL</span><span>Kafka</span><span>Flink</span><span>Spark</span><span>Pinot</span><span>Gemini</span><span>Bazel</span>
+        </div>
+      </article>
+
+      <article class="tl-card reveal">
+        <div class="tl-meta">
+          <span class="tl-badge">MI</span>
+          <span class="mono tl-date">Dec 2022 — Jun 2024</span>
+        </div>
+        <h4>Software Development Engineer 2 · <span class="accent">Masters India</span></h4>
+        <p class="tl-project">GST Compliance &amp; E-Invoicing Platform</p>
+        <ul>
+          <li>Led the migration from a PHP (Laravel) monolith to async <strong>Python (FastAPI) microservices</strong> — p95 latency dropped from <strong>1.2s to 300ms</strong> for 2,500+ enterprise clients.</li>
+          <li>Scaled bulk e-invoicing to <strong>100K+ transactions per import, 1M+ daily</strong> with chunked async workers and idempotent retries.</li>
+          <li>Stood up ELK + New Relic observability with alerting (triage time −70%) and pushed test coverage from <strong>35% to 82%</strong>, gating CI/CD releases.</li>
+        </ul>
+        <div class="chips">
+          <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span><span>ELK</span><span>New Relic</span><span>AWS</span>
+        </div>
+      </article>
+
+      <article class="tl-card reveal">
+        <div class="tl-meta">
+          <span class="tl-badge">GFG</span>
+          <span class="mono tl-date">Aug 2021 — Nov 2022</span>
+        </div>
+        <h4>Software Development Engineer · <span class="accent">GeeksforGeeks</span></h4>
+        <p class="tl-project">Platform backend — the site every engineer has opened at 2 AM</p>
+        <ul>
+          <li>Redesigned and migrated the backend from PHP to <strong>Django</strong>, improving reliability for <strong>100K+ daily queries</strong>.</li>
+          <li>Built voting and pinning APIs that lifted <strong>premium subscriptions 15–20%</strong>; shipped an influencer dashboard with real-time analytics and async video pipelines that <strong>boosted course sales 30%</strong>.</li>
+        </ul>
+        <div class="chips">
+          <span>Python</span><span>Django</span><span>MySQL</span><span>Redis</span><span>Cron</span><span>AWS</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <h3 class="section-title"><span class="mono accent">02.</span> What I Work With</h3>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h5>🐍 Languages</h5>
+        <p>Python · Go (Golang) · SQL</p>
+      </div>
+      <div class="skill-card reveal">
+        <h5>⚙️ Backend &amp; APIs</h5>
+        <p>FastAPI · Gin · Django · SQLAlchemy · Pydantic · REST · gRPC · WebSockets · SSE · Celery</p>
+      </div>
+      <div class="skill-card reveal">
+        <h5>🤖 AI &amp; Agents</h5>
+        <p>LLM agents (OpenAI / Gemini / Claude) · LangGraph · LangChain · MCP · RAG · text-to-SQL · pgvector · ChromaDB</p>
+      </div>
+      <div class="skill-card reveal">
+        <h5>🌊 Streaming &amp; Data</h5>
+        <p>Apache Kafka · Flink · Spark · Pinot · ClickHouse · BigQuery · DuckDB</p>
+      </div>
+      <div class="skill-card reveal">
+        <h5>🗄️ Databases</h5>
+        <p>PostgreSQL · MySQL · Redis · MongoDB · Cassandra · Elasticsearch · S3</p>
+      </div>
+      <div class="skill-card reveal">
+        <h5>☁️ Cloud &amp; Infra</h5>
+        <p>GCP · AWS · Docker · Kubernetes · CI/CD · ELK · Grafana · New Relic · Sentry</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section">
+    <h3 class="section-title"><span class="mono accent">03.</span> Bragging Rights</h3>
+    <div class="achievements">
+      <div class="ach-card reveal">
+        <span class="ach-emoji">🏅</span>
+        <p><strong>Rank 2260 / 37,000+</strong> — Google Code Jam Qualifier 2021</p>
+      </div>
+      <div class="ach-card reveal">
+        <span class="ach-emoji">🏆</span>
+        <p><strong>Smart India Hackathon 2020 Finalist</strong> — top 3 nationally (MHRD)</p>
+      </div>
+      <div class="ach-card reveal">
+        <span class="ach-emoji">🎓</span>
+        <p><strong>B.Tech, Information Technology</strong> — IET Lucknow, 2017–2021</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEYOND CODE ============ -->
+  <section id="beyond" class="section">
+    <h3 class="section-title"><span class="mono accent">04.</span> Beyond the Code</h3>
+    <p class="beyond-intro reveal">Engineering is the day job. This is the rest of the load-out.</p>
+    <div class="hobby-grid">
+      <div class="hobby-card reveal">
+        <span class="hobby-emoji">⚽</span>
+        <h5>Football</h5>
+        <p>Weekend turf regular. Will discuss pressing systems and false nines with the same energy as system design.</p>
+      </div>
+      <div class="hobby-card reveal">
+        <span class="hobby-emoji">🔫</span>
+        <h5>CS:GO</h5>
+        <p>Years of clutch-or-cry moments. Believes good crosshair placement and good API design are the same skill: positioning.</p>
+      </div>
+      <div class="hobby-card reveal">
+        <span class="hobby-emoji">🎮</span>
+        <h5>FIFA 26</h5>
+        <p>Building squads, grinding rivals, and taking losses to kids with better reflexes. Rage-quit rate: gracefully declining.</p>
+      </div>
+      <div class="hobby-card reveal">
+        <span class="hobby-emoji">📚</span>
+        <h5>Tech Blogs</h5>
+        <p>Chronically online reader of engineering blogs — distributed systems war stories, database internals, and postmortems are peak content.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <h3 class="footer-title reveal">Let's build something<span class="accent">.</span></h3>
+    <p class="reveal">Whether it's a role, a project, or a football match — my inbox is open.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="mailto:tm.eng2021@gmail.com">tm.eng2021@gmail.com</a>
+      <a class="btn" href="assets/Tarun_Mittal_Resume.pdf" download="Tarun_Mittal_Resume.pdf">Resume ↓</a>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/TM-DEV-PRO" target="_blank" rel="noopener">GitHub</a>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/t-mittal/" target="_blank" rel="noopener">LinkedIn</a>
+      <span>·</span>
+      <a href="tel:+919001542418">+91 90015 42418</a>
+    </div>
+    <p class="mono footer-note">Built with plain HTML/CSS/JS · deployed by GitHub Actions · no frameworks were harmed</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
