@@ -14,4 +14,10 @@ Drop a square-ish photo at `assets/profile.jpg` and push — the site picks it u
 
 ## Update the resume
 
-Replace `assets/Tarun_Mittal_Resume.pdf` with the latest compiled PDF from the `final-resume` repo (`output/resume.pdf`) and push.
+Copy latest PDFs from the `final-resume` repo into `assets/`:
+
+- `Tarun_Mittal_SSE_5yr_v2.pdf` → also overwrite `Tarun_Mittal_Resume.pdf` (main download)
+- `Tarun_Mittal_SSE_Java_5yr.pdf`
+- `campaign_pygo_xyz/output/Tarun_Mittal_SSE_PyGo_XYZ.pdf`
+
+Multi-track hub: https://tm-dev-pro.github.io/final-resume/
