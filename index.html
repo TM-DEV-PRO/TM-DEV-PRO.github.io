@@ -76,19 +76,19 @@
       <article class="tl-card reveal">
         <div class="tl-meta">
           <span class="tl-badge current">Now</span>
-          <span class="mono tl-date">Jun 2026 — Present</span>
+          <span class="mono tl-date">May 2026 — Present</span>
         </div>
         <h4>Senior Software Engineer · <span class="accent">Impact Analytics</span></h4>
-        <p class="tl-project">Agentic AssortSmart — AI-powered retail merchandise planning</p>
+        <p class="tl-project">Agentic AssortSmart — AI-powered retail merchandise planning (building)</p>
         <ul>
           <li>Building the agentic rebuild of AssortSmart, a merchandise planning SaaS where AI agents draft store clusters and plans for planner review, override, and approval.</li>
-          <li>Developing the <strong>Python agentic microservice (FastAPI, LangGraph, MCP)</strong> — the store clustering agent picks features by significance, tunes cluster count via silhouette scoring, and serves 3–5 ranked scenarios, cutting turnaround from days to <strong>under an hour</strong>.</li>
+          <li>Developing the <strong>Python agentic microservice (FastAPI, LangGraph, MCP)</strong> — the store clustering agent picks features by significance, tunes cluster count via silhouette scoring, and serves 3–5 ranked scenarios, <strong>targeting</strong> turnaround from days to under an hour (measured failure baseline 8.5%; under 2% is a target).</li>
           <li>Building the core backend as <strong>Go (Gin) microservices</strong> — plan lifecycle, tenant config, bulk saves, JWT middleware, goroutine worker pools.</li>
-          <li>Led adoption of <strong>ClickHouse</strong> with an append-only versioned write model: every planner override is an insert, powering version diff, undo/redo, and an immutable audit trail.</li>
-          <li>Designing the <strong>planning grid backend</strong> — an Excel-like pivot surface serving rollups at <strong>p95 &lt; 500ms</strong> and cell edits under <strong>80ms</strong>.</li>
+          <li>Led adoption of <strong>ClickHouse</strong> with an append-only / partition-swapped planning store (63 tables / 8 layers design) so agent reads stay deterministic; pivot POC <strong>189s → 12.3s</strong>.</li>
+          <li>Designing planner-facing read budgets as <strong>targets</strong> (grid p95 under 500ms) — bring-up load test still pending.</li>
         </ul>
         <div class="chips">
-          <span>Python</span><span>FastAPI</span><span>LangGraph</span><span>MCP</span><span>Go</span><span>Gin</span><span>ClickHouse</span><span>PostgreSQL</span><span>Kafka</span><span>GCP</span>
+          <span>Python</span><span>FastAPI</span><span>LangGraph</span><span>MCP</span><span>Go</span><span>Gin</span><span>ClickHouse</span><span>PostgreSQL</span><span>GCP</span>
         </div>
       </article>
 
@@ -100,10 +100,10 @@
         <h4>Software Engineer · <span class="accent">Uber</span> <span class="tl-via">(via EPAM Systems)</span></h4>
         <p class="tl-project">FRM Scoping Platform (Uber Finance) · Menu Ingestion &amp; Automation (Uber Eats)</p>
         <ul>
-          <li>Cut Uber's quarterly financial risk-scoping cycle by <strong>70%</strong> — replaced a manual Sheets workflow with a FastAPI + MySQL platform (36 REST endpoints, 8 screens) feeding PwC audit work papers.</li>
-          <li>Designed an 8-table normalized schema whose quarterly ETL crunches <strong>19M+ general-ledger rows into 300K</strong>, reconciled against public 10-Q filings.</li>
-          <li>Built an event-driven ingestion pipeline on <strong>Kafka, Flink, and Spark</strong> processing <strong>30,000+ vendor menus/month</strong> — onboarding went from 24h to 2h, saving <strong>$600K+ a year</strong>.</li>
-          <li>Shipped an AI extraction pipeline (<strong>RAG + Gemini 2.5 Pro</strong>) turning PDF and image menus into schema-validated catalog data at <strong>98% fidelity</strong>.</li>
+          <li>Targeting a <strong>~70%</strong> cut in quarterly financial risk-scoping cycle time (~2 weeks to ~3–4 days) — replaced a manual Sheets workflow with a FastAPI + MySQL platform (<strong>30+</strong> REST endpoints, 8 screens) feeding PwC audit work papers.</li>
+          <li>Owned the scoping-service data model (<strong>11 SQLAlchemy models</strong>) whose quarterly ETL crunches <strong>19M+ general-ledger rows into 300K</strong>, reconciled against public 10-Q filings.</li>
+          <li>Built an event-driven menu ingestion path on <strong>Selenium, Kafka, and Flink</strong> processing <strong>30,000+ vendor menus/month</strong> — onboarding went from 24h to 2h, saving <strong>$600K+ a year</strong>.</li>
+          <li>Shipped an AI extraction pipeline (<strong>RAG + Gemini + Milvus</strong>) turning PDF and image menus into schema-validated catalog data at <strong>98% offline fidelity / 100% schema consistency</strong>.</li>
         </ul>
         <div class="chips">
           <span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>MySQL</span><span>Kafka</span><span>Flink</span><span>Spark</span><span>Pinot</span><span>Gemini</span><span>Bazel</span>
@@ -118,7 +118,7 @@
         <h4>Software Development Engineer 2 · <span class="accent">Masters India</span></h4>
         <p class="tl-project">GST Compliance &amp; E-Invoicing Platform</p>
         <ul>
-          <li>Led the migration from a PHP (Laravel) monolith to async <strong>Python (FastAPI) microservices</strong> — p95 latency dropped from <strong>1.2s to 300ms</strong> for 2,500+ enterprise clients.</li>
+          <li>Led the migration from a PHP (Laravel) monolith to async <strong>Python (FastAPI) microservices</strong> — p95 latency dropped from <strong>1.2s to 300ms</strong> for 1,500+ enterprise clients.</li>
           <li>Scaled bulk e-invoicing to <strong>100K+ transactions per import, 1M+ daily</strong> with chunked async workers and idempotent retries.</li>
           <li>Stood up ELK + New Relic observability with alerting (triage time −70%) and pushed test coverage from <strong>35% to 82%</strong>, gating CI/CD releases.</li>
         </ul>
@@ -135,7 +135,7 @@
         <h4>Software Development Engineer · <span class="accent">GeeksforGeeks</span></h4>
         <p class="tl-project">Platform backend — the site every engineer has opened at 2 AM</p>
         <ul>
-          <li>Redesigned and migrated the backend from PHP to <strong>Django</strong>, improving reliability for <strong>100K+ daily queries</strong>.</li>
+          <li>Redesigned and migrated the backend from PHP to <strong>Django</strong>, improving reliability for <strong>10K+ daily queries</strong>.</li>
           <li>Built voting and pinning APIs that lifted <strong>premium subscriptions 15–20%</strong>; shipped an influencer dashboard with real-time analytics and async video pipelines that <strong>boosted course sales 30%</strong>.</li>
         </ul>
         <div class="chips">
