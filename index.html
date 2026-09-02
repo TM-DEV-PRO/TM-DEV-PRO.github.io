@@ -35,12 +35,10 @@
       <h1>Tarun Mittal<span class="accent">.</span></h1>
       <h2 class="hero-sub">I build backends that <span class="gradient-text" id="typed">scale</span><span class="cursor">|</span></h2>
       <p class="hero-blurb">
-        Senior Software Engineer with <strong>5 years</strong> designing and owning cloud-native,
-        high-throughput distributed systems. Expertise in <strong>Java</strong>, <strong>Python</strong>, and
-        <strong>Go</strong> microservices, with applied experience in <strong>AI-assisted and RAG</strong> systems.
-        Currently building <strong>AssortSmart</strong> at Impact Analytics — Keep/Drop recommendations and
-        dig-deeper QnA for retail merchandise planning. Previously moved money-scale data at <strong>Uber</strong>,
-        GST invoices at <strong>Masters India</strong>, and a whole lot of code at <strong>GeeksforGeeks</strong>.
+        Senior Software Engineer with <strong>5 years</strong> architecting high-throughput, cloud-native
+        distributed systems in <strong>Java</strong>, <strong>Python</strong>, and <strong>Go</strong>.
+        Currently owning <strong>AssortSmart</strong> at Impact Analytics — platform engineering plus
+        agentic Keep/Drop and Ask Iris on ClickHouse. Previously Uber (via EPAM), Masters India, and GeeksforGeeks.
       </p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="assets/Tarun_Mittal_Resume.pdf" download="Tarun_Mittal_SSE_Java_PyGoIA_Final.pdf">Download Resume</a>
@@ -79,12 +77,11 @@
           <span class="mono tl-date">May 2026 — Present</span>
         </div>
         <h4>Senior Software Engineer · <span class="accent">Impact Analytics</span></h4>
-        <p class="tl-project">AssortSmart — retail merchandise planning platform</p>
+        <p class="tl-project">AssortSmart — Platform Engineering &amp; Agentic Flows</p>
         <ul>
-          <li>Building <strong>AssortSmart</strong>, a retail merchandise planning platform for seasonal buying, store clustering, and assortment decisions.</li>
-          <li>Architected AssortSmart’s <strong>Keep/Drop engine</strong> at article × plan-season grain, combining deterministic ST%/ROS scoring with LangGraph lenses; agents stay SELECT-only on ClickHouse through CSV-first bake-and-promote, with promotions gated on <strong>300 gold cases and ≥80% offline accuracy</strong>.</li>
-          <li>Built a <strong>read-only dig-deeper QnA agent</strong> over locked Keep/Drop decisions so planners can understand why styles were kept or dropped while schema constraints preserve frozen decisions and block writes to ClickHouse, CSVs, and outcomes.</li>
-          <li>Drove adoption of <strong>ClickHouse</strong> as AssortSmart’s planning analytics engine, reducing pivot latency from <strong>189s to 12.3s</strong> (~15.5x) on <strong>250M rows</strong> through a row-identical Postgres-versus-ClickHouse POC.</li>
+          <li>Architected a multi-tenant <strong>Go/Gin</strong> platform (compile-time DI, Datadog tracing) and moved planning analytics to <strong>ClickHouse</strong>, cutting pivot latency from <strong>189s to 12s</strong> (~15.5x) on 250M rows.</li>
+          <li>Built the merchandise decision engine (<strong>Keep/Drop</strong>, Missed Opportunities, Top Style) with air-gapped LLM batches over a 2.11B-row fact table, plus a 300-case / ≥80% offline promotion gate.</li>
+          <li>Shipped <strong>Ask Iris</strong>, a WebSocket LangGraph copilot (Supervisor + Evaluator) so planners can query KPIs and drill into frozen AI decisions without write-back.</li>
         </ul>
         <div class="chips">
           <span>Python</span><span>FastAPI</span><span>LangGraph</span><span>MCP</span><span>Go</span><span>Gin</span><span>ClickHouse</span><span>BigQuery</span><span>GCP</span>
