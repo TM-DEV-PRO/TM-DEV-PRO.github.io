@@ -16,8 +16,8 @@ Drop a square-ish photo at `assets/profile.jpg` and push — the site picks it u
 
 Public **Download Resume** buttons serve **one** PDF only — the hybrid final:
 
-- Source: `final-resume/final_java_pygo_ia/artifacts/Tarun_Mittal_SSE_Java_PyGoIA_Final.pdf`
-- Copy over: `assets/Tarun_Mittal_Resume.pdf` (and optionally `assets/Tarun_Mittal_SSE_Java_PyGoIA_Final.pdf`)
-- Download filename: `Tarun_Mittal_SSE_Java_PyGoIA_Final.pdf`
+- Source: `final-resume/final_java_pygo_ia/artifacts/Tarun_Mittal_SSE_5yr_Java_PyGo_AI.pdf`
+- Copy over: `assets/Tarun_Mittal_Resume.pdf` (and optionally `assets/Tarun_Mittal_SSE_5yr_Java_PyGo_AI.pdf`)
+- Download filename: `Tarun_Mittal_SSE_5yr_Java_PyGo_AI.pdf`
 
 Multi-track hub (all finals): https://tm-dev-pro.github.io/final-resume/
