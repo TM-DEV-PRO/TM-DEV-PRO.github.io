@@ -77,11 +77,13 @@
           <span class="mono tl-date">May 2026 — Present</span>
         </div>
         <h4>Senior Software Engineer · <span class="accent">Impact Analytics</span></h4>
-        <p class="tl-project">AssortSmart — Platform Engineering &amp; Agentic Flows</p>
+        <p class="tl-project">AssortSmart — Agentic Flows &amp; Core Infrastructure</p>
         <ul>
-          <li>Architected a multi-tenant <strong>Go/Gin</strong> platform (compile-time DI, Datadog tracing) and moved planning analytics to <strong>ClickHouse</strong>, cutting pivot latency from <strong>189s to 12s</strong> (~15.5x) on 250M rows.</li>
-          <li>Built the <strong>multi-pipeline AI merchandise decision engine (Keep/Drop, Missed Opportunities, Top Style)</strong> with air-gapped LLM batches over a 2.11B-row fact table, plus a 300-case / ≥80% offline promotion gate.</li>
-          <li>Shipped <strong>Ask Iris</strong>, a WebSocket LangGraph copilot (Supervisor + Evaluator) so planners can query KPIs and drill into frozen AI decisions without write-back.</li>
+          <li>Built the <strong>multi-pipeline AI merchandise decision engine (Keep/Drop, Missed Opportunities, Top Style)</strong> on <strong>348k article-seasons</strong>, with JSON payloads off a 2.11B-row ClickHouse master and a 300-case / 80% CI gate (73% cheaper scoring at 100% coverage vs a 74% det baseline).</li>
+          <li>Shipped <strong>Ask Iris</strong>, a JWT-secured WebSocket LangGraph copilot (supervisor + 3-attempt evaluator, handshake-frozen hierarchy).</li>
+          <li>Architected a multi-tenant <strong>Go/Gin</strong> platform (compile-time DI, Datadog tracing) at 10k peak RPS.</li>
+          <li>Reduced planner pivot latency by <strong>15.5×</strong> (189s to 12s on 250M-row operations) by building a ClickHouse pre-aggregation layer for season and weekly rollups. Prevented <strong>170GB</strong> OOM crashes by slicing batch inserts into temporal chunks and enforcing memory and disk-spill caps.</li>
+          <li>Migrated ClickHouse rollups across Cloud clusters at ~<strong>344k rows/s</strong> by writing a custom Go native-TLS data pump. Processed partitions up to <strong>4.09B</strong> rows using 500k-row double-buffered batches and partition rollbacks.</li>
         </ul>
         <div class="chips">
           <span>Python</span><span>FastAPI</span><span>LangGraph</span><span>MCP</span><span>Go</span><span>Gin</span><span>ClickHouse</span><span>BigQuery</span><span>GCP</span>
